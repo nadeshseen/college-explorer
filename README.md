@@ -1,4 +1,4 @@
-# course-project-template
+# College Explorer
 
 Team Details:  
 Team Name: RunTime Terror  
