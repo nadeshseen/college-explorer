@@ -1,0 +1,243 @@
+
+/* basic header and background */
+
+.header {
+    min-height: 92vh; 
+    width: 100%; 
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/hello.jpg);
+    background-position: center; 
+    background-size: cover; 
+    position: relative; 
+}
+
+
+/* search panel */
+
+input
+{
+    color: #fff;
+    font-family: Nunito;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+
+form
+{
+    height: 56px;
+}
+
+input[type="text"]
+{
+    width: 100%;
+    height: 56px;
+    font-size: 52px;
+    line-height: 1;
+}
+
+/* card */
+
+.profile-card-4 {
+    max-width: 300px; 
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.profile-card-4 img {
+    transition: all 0.25s linear;
+}
+
+.profile-card-4 .profile-content {
+    position: relative;
+    padding: 15px;
+    background-color: #FFF;
+}
+
+.profile-card-4 .profile-name {
+    font-weight: bold;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    /* top: -70px; */
+    color: #FFF;
+    font-size: 17px;
+    margin: 0;
+    /* position: absolute; */
+    top: -20%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.profile-card-4 .profile-name p {
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    vertical-align: middle;
+}
+
+.profile-card-4 .profile-name a {
+    color: white; 
+}
+
+.profile-card-4 .profile-description {
+    color: #777;
+    font-size: 12px;
+    padding: 15px;
+}
+
+.profile-card-4 .profile-overview {
+    padding: 0px 0px;
+}
+
+.profile-card-4 .profile-overview p {
+    font-size: 10px;
+    font-weight: 600;
+    color: #777;
+}
+
+.profile-card-4 .col-xs-4 {
+    width: 33.33%; 
+}
+
+.profile-card-4 .profile-overview h4 {
+    color: #273751;
+    font-weight: bold;
+}
+
+
+
+.profile-card-4 .profile-content::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    top: -10px;
+    left: 0px;
+    right: 0px;
+    background-color: #FFF;
+    z-index: 0;
+    transform: skewY(3deg);
+}
+
+.profile-card-4:hover img {
+    transform: rotate(5deg) scale(1.1, 1.1);
+    filter: brightness(110%);
+}
+.dropdown_button{
+    position: relative;
+
+}
+
+/* heading css */
+
+
+.v{
+    margin-top: 10%; 
+    margin-left:28%;
+    color: aliceblue;
+}
+.nav {
+    
+    padding:0;
+
+    text-align:center; 
+    height: 60px;
+    display: inline-block;
+}
+ 
+.nav li {
+    text-align: center; 
+ 
+    float: left;
+    list-style-type: none;
+    position: relative;
+}
+
+.nav li a {
+    font-size: 16px;
+    color: white;
+    display: block;
+    line-height: 60px;
+    padding: 0 26px;
+    text-decoration: none;
+    border-left: 1px solid #2e2e2e;
+    font-family: Montserrat, sans-serif;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+.nav li a:hover {
+    background-color: #2e2e2e;
+}
+
+.nav li select {
+    cursor:pointer;
+    display:flex;
+    position:relative;
+    font:normal 25px/22px Arial, Sans-Serif;
+    color: black;
+    border:11px solid #ccc;
+
+}
+ 
+#settings a {
+    padding: 18px;
+    height: 24px;
+    font-size: 10px;
+    line-height: 24px;
+}
+
+#search {
+
+    position:relative ;
+	height:10em;
+    /* width:350px; */
+    margin-top: 8%; 
+    margin-left: 32%; 
+
+} 
+#search_text{
+    width: 297px;
+    padding: 0px 0 15px 20px;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    border: 0 none;
+    height: 52px;
+    margin-right: 0;
+    color: white;
+    outline: none;
+    background: #1f7f5c;
+    float: left;
+    box-sizing: border-box;
+    transition: all 0.15s;
+}
+::-webkit-input-placeholder { 
+    color: white;
+}
+:-moz-placeholder { 
+    color: white;
+}
+::-moz-placeholder { 
+    color: white;
+}
+:-ms-input-placeholder { 
+    color: white;
+}
+#search_text:focus {
+    background: rgb(64, 151, 119);
+}
+#search_button {
+    border: 0 none;
+    background: #8da59c url(images/gd.jpg) center no-repeat;
+    width: 60px;
+    float: left;
+    padding: 0;
+    text-align: center;
+    height: 52px;
+    cursor: pointer;
+}
+
